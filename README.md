@@ -58,23 +58,6 @@ O objetivo foi **implementar uma infraestrutura automatizada utilizando AWS Clou
   - **Resources**: os recursos da AWS.  
   - **Outputs**: valores de saída.  
 
----
-
-### 🔹 Exemplo de Template
-```json
-{
-  "Parameters": {
-    "DBName": {
-      "Default": "MyDatabase",
-      "Description": "Nome do banco MySQL",
-      "Type": "String",
-      "MinLength": "1",
-      "MaxLength": "64",
-      "AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*"
-    }
-  }
-}
-
 
 ---
 ## 🔹 Diferença entre CloudFormation e Terraform
@@ -95,3 +78,19 @@ O objetivo foi **implementar uma infraestrutura automatizada utilizando AWS Clou
 - Usar **templates JSON/YAML** ajuda a manter a padronização, versionamento e reuso da infraestrutura.  
 - Notei que o **Terraform** é uma alternativa importante em projetos multi-cloud, mas dentro da AWS o **CloudFormation** se mostra mais prático pela integração nativa.  
 - Esse desafio me mostrou a importância de **documentar os processos**, pois o README se torna um registro útil de aprendizado e referência futura.  
+---
+
+### 🔹 Exemplo de Template
+```json
+{
+  "Parameters": {
+    "DBName": {
+      "Default": "MyDatabase",
+      "Description": "Nome do banco MySQL",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "64",
+      "AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*"
+    }
+  }
+}
