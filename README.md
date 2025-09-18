@@ -74,15 +74,15 @@ O objetivo foi **implementar uma infraestrutura automatizada utilizando AWS Clou
 ## 📷 Evidências do Desafio
 
 - **Criação de Stack no CloudFormation**  
-  Aqui vemos a tela inicial do serviço, onde escolhemos o **template** que define os recursos a serem criados (em JSON ou YAML).  
-  O CloudFormation oferece diferentes opções: carregar o template de um bucket S3, enviar um arquivo local ou até sincronizar com um repositório Git.  
-  ![Criação da Stack](./criar.png)
+  Tela inicial onde selecionamos o template que define os recursos a serem criados (em JSON ou YAML).  
+  O CloudFormation permite carregar templates via S3, arquivo local ou repositório Git.  
+  ![Criação da Stack](./criar.png.png)
 
 - **Infrastructure Composer**  
-  Nesta tela, utilizei o **Infrastructure Composer**, que permite **modelar a infraestrutura de forma visual**.  
-  É possível arrastar e soltar componentes (como EC2, RDS, DynamoDB, API Gateway etc.) e o próprio Composer gera automaticamente o **template** correspondente.  
-  Isso ajuda a visualizar como os recursos se conectam antes mesmo de criar a stack.  
-  ![Infrastructure Composer](./vizualizar.png)
+  Interface visual que ajuda a modelar a infraestrutura arrastando recursos (como EC2, RDS, DynamoDB, API Gateway etc.).  
+  O Composer gera automaticamente o template em JSON/YAML, facilitando o entendimento e a criação da stack.  
+  ![Infrastructure Composer](./vizualizar.png.png)
+
 
 ---
 ## 📚 Insights e Aprendizados
